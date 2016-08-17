@@ -1,33 +1,22 @@
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
-# Debug files
-*.dSYM/
-*.su
+_ReSharper*/
+obj/
+bin/
+Debug/
+Release/
+packages/
+*.suo
+*.user
+*.orig
+bin/[Rr]elease/evointernal.dll
+bin/[Dd]ebug/evointernal.dll
+bin/evointernal.dll
+.Publish.xml
+StyleCop.Cache
+*.testsettings
+*/Results/*
+*/Doc/*
+Doc/*
+*.coverage
+*.GhostDoc.xml
+*UpgradeLog*.htm
+*.DotSettings
