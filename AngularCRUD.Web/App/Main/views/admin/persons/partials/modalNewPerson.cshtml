@@ -1,0 +1,36 @@
+﻿<div class="modal-header">
+    <h2>Agregar Persona</h2>
+</div>
+<div class="modal-body">
+    <div class="alert alert-danger text-center" ng-show="mensajeError">
+        <strong>{{mensajeError}}</strong>
+    </div>
+    <form role="form" name="modalNewPerson">
+        <div class="form-group" ng-class="{'has-error' : modalNewPerson.iptNombre.$dirty && modalNewPerson.iptNombre.$invalid}">
+            <label class="control-label" for="iptNombre">Nombre</label>
+            <input type="text" class="form-control" id="iptNombre" name="iptNombre" placeholder="Ingrese el nombre" ng-model="person.name" required maxlength="512" />
+            <div ng-show="modalNewPerson.iptNombre.$dirty && modalNewPerson.iptNombre.$invalid">
+                <small ng-show="modalNewPerson.iptNombre.$error.required" class="text-danger">
+                    El nombre de la persona es requerido
+                </small>
+            </div>
+        </div>
+        <div class="form-group" ng-class="{'has-error' : modalNewPerson.iptApellido.$dirty && modalNewPerson.iptApellido.$invalid}">
+            <label class="control-label" for="iptApellido">Apellido</label>
+            <input type="text" class="form-control" id="iptApellido" name="iptApellido" placeholder="Ingrese el apellido" ng-model="person.apellido" required maxlength="512" />
+            <div ng-show="modalNewPerson.iptApellido.$dirty && modalNewPerson.iptApellido.$invalid">
+                <small ng-show="modalNewPerson.iptApellido.$error.required" class="text-danger">
+                    El apellido de la persona es requerido
+                </small>
+            </div>
+        </div>
+        <div class="form-group" ng-class="{'has-error' : modalNewPerson.iptEdad.$dirty && modalNewPerson.iptEdad.$invalid}">
+            <label class="control-label" for="iptEdad">Edad</label>
+            <input type="text" class="form-control" id="iptEdad" name="iptEdad" placeholder="Ingrese la edad" ng-model="person.edad" required maxlength="2" />
+        </div>
+    </form>
+</div>
+<div class="modal-footer">
+    <button class="btn btn-success" ng-click="okModal()" ng-disabled="modalNewPerson.$invalid">Crear</button>
+    <button class="btn btn-danger" ng-click="cancelModal()">Cancelar</button>
+</div>

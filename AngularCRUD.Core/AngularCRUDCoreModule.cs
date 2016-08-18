@@ -1,13 +1,14 @@
-﻿using System.Reflection;
-using Abp.Modules;
-
-namespace SuperPowers
+﻿namespace AngularCRUD
 {
+    using System.Reflection;
+
+    using Abp.Modules;
+
     public class AngularCRUDCoreModule : AbpModule
     {
         public override void Initialize()
         {
-            IocManager.RegisterAssemblyByConvention(Assembly.GetExecutingAssembly());
+            this.IocManager.RegisterAssemblyByConvention(Assembly.GetExecutingAssembly());
         }
     }
 }

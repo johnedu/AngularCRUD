@@ -1,26 +1,27 @@
-namespace SuperPowers.Migrations
+namespace AngularCRUD.Migrations
 {
     using System;
     using System.Collections.Generic;
     using System.Data.Entity.Infrastructure.Annotations;
     using System.Data.Entity.Migrations;
     
-    public partial class Initial_database : DbMigration
+    public partial class Initial : DbMigration
     {
         public override void Up()
         {
             CreateTable(
-                "super_powers.super_powers_person",
+                "angularCrud.person",
                 c => new
                     {
                         Id = c.Int(nullable: false, identity: true),
                         Name = c.String(nullable: false),
-                        Type = c.String(nullable: false),
+                        Apellido = c.String(nullable: false),
+                        Edad = c.Int(nullable: false),
                         TenantId = c.Int(nullable: false),
                     },
                 annotations: new Dictionary<string, object>
                 {
-                    { "DynamicFilter_SuperPowersPerson_MustHaveTenant", "EntityFramework.DynamicFilters.DynamicFilterDefinition" },
+                    { "DynamicFilter_Person_MustHaveTenant", "EntityFramework.DynamicFilters.DynamicFilterDefinition" },
                 })
                 .PrimaryKey(t => t.Id);
             
@@ -28,10 +29,10 @@ namespace SuperPowers.Migrations
         
         public override void Down()
         {
-            DropTable("super_powers.super_powers_person",
+            DropTable("angularCrud.person",
                 removedAnnotations: new Dictionary<string, object>
                 {
-                    { "DynamicFilter_SuperPowersPerson_MustHaveTenant", "EntityFramework.DynamicFilters.DynamicFilterDefinition" },
+                    { "DynamicFilter_Person_MustHaveTenant", "EntityFramework.DynamicFilters.DynamicFilterDefinition" },
                 });
         }
     }

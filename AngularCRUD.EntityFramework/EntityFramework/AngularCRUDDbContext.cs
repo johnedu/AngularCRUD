@@ -1,8 +1,9 @@
-﻿using Abp.EntityFramework;
-using SuperPowers.Classify.Mappings;
-
-namespace SuperPowers.EntityFramework
+﻿namespace AngularCRUD.EntityFramework
 {
+    using Abp.EntityFramework;
+
+    using AngularCRUD.Admin.Mappings;
+
     public class AngularCRUDDbContext : AbpDbContext
     {
         //TODO: Define an IDbSet for each Entity...
@@ -22,8 +23,8 @@ namespace SuperPowers.EntityFramework
         }
 
         /* NOTE:
-         *   This constructor is used by ABP to pass connection string defined in SuperPowersDataModule.PreInitialize.
-         *   Notice that, actually you will not directly create an instance of SuperPowersDbContext since ABP automatically handles it.
+         *   This constructor is used by ABP to pass connection string defined in AngularCRUDDataModule.PreInitialize.
+         *   Notice that, actually you will not directly create an instance of AngularCRUDDbContext since ABP automatically handles it.
          */
         public AngularCRUDDbContext(string nameOrConnectionString)
             : base(nameOrConnectionString)
@@ -34,8 +35,8 @@ namespace SuperPowers.EntityFramework
         protected override void OnModelCreating(System.Data.Entity.DbModelBuilder modelBuilder)
         {
 
-            modelBuilder.HasDefaultSchema("super_powers");
-            modelBuilder.Configurations.Add(new SuperPowersPersonMap());
+            modelBuilder.HasDefaultSchema("angularCrud");
+            modelBuilder.Configurations.Add(new PersonMap());
 
             base.OnModelCreating(modelBuilder);
         }

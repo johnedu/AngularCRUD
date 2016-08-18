@@ -198,6 +198,10 @@
     <Content Include="App\Main\main.min.css">
       <DependentUpon>main.css</DependentUpon>
     </Content>
+    <Content Include="App\Main\views\admin\persons\persons.js" />
+    <Content Include="App\Main\views\admin\persons\partials\modalEditPerson.js" />
+    <Content Include="App\Main\views\admin\persons\partials\modalDeletePersons.js" />
+    <Content Include="App\Main\views\admin\persons\partials\modalNewPerson.js" />
     <Content Include="App\Main\views\layout\header.js" />
     <Content Include="App\Main\views\layout\layout.js" />
     <Content Include="App\Main\views\home\home.js" />
@@ -1070,6 +1074,10 @@
     <Content Include="Content\toastr.less" />
     <Content Include="Abp\Framework\styles\abp.less" />
     <Content Include="Abp\Framework\styles\abp.css.map" />
+    <Content Include="App\Main\views\admin\persons\persons.cshtml" />
+    <Content Include="App\Main\views\admin\persons\partials\modalEditPerson.cshtml" />
+    <Content Include="App\Main\views\admin\persons\partials\modalDeletePersons.cshtml" />
+    <Content Include="App\Main\views\admin\persons\partials\modalNewPerson.cshtml" />
     <None Include="Scripts\jquery-2.1.3.intellisense.js" />
     <Content Include="Scripts\jquery-2.1.3.js" />
     <Content Include="Scripts\jquery-2.1.3.min.js" />

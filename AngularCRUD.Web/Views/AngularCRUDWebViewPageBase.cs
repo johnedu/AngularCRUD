@@ -1,7 +1,7 @@
-﻿using Abp.Web.Mvc.Views;
-
-namespace SuperPowers.Web.Views
+﻿namespace AngularCRUD.Web.Views
 {
+    using Abp.Web.Mvc.Views;
+
     public abstract class AngularCRUDWebViewPageBase : AngularCRUDWebViewPageBase<dynamic>
     {
 
@@ -11,7 +11,7 @@ namespace SuperPowers.Web.Views
     {
         protected AngularCRUDWebViewPageBase()
         {
-            LocalizationSourceName = AngularCRUDConsts.LocalizationSourceName;
+            this.LocalizationSourceName = AngularCRUDConsts.LocalizationSourceName;
         }
     }
 }

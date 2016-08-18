@@ -1,7 +1,7 @@
-﻿using Abp.Web.Mvc.Controllers;
-
-namespace SuperPowers.Web.Controllers
+﻿namespace AngularCRUD.Web.Controllers
 {
+    using Abp.Web.Mvc.Controllers;
+
     /// <summary>
     /// Derive all Controllers from this class.
     /// </summary>
@@ -9,7 +9,7 @@ namespace SuperPowers.Web.Controllers
     {
         protected AngularCRUDControllerBase()
         {
-            LocalizationSourceName = AngularCRUDConsts.LocalizationSourceName;
+            this.LocalizationSourceName = AngularCRUDConsts.LocalizationSourceName;
         }
     }
 }

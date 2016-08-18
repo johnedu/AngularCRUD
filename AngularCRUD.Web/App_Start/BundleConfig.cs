@@ -1,7 +1,7 @@
-﻿using System.Web.Optimization;
-
-namespace SuperPowers.Web
+﻿namespace AngularCRUD.Web
 {
+    using System.Web.Optimization;
+
     public static class BundleConfig
     {
         public static void RegisterBundles(BundleCollection bundles)

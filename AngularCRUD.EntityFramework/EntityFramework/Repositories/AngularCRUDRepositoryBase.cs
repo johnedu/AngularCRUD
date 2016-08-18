@@ -1,13 +1,15 @@
-﻿using Abp.Domain.Entities;
-using Abp.EntityFramework;
-using Abp.EntityFramework.Repositories;
-
-namespace SuperPowers.EntityFramework.Repositories
+﻿namespace AngularCRUD.EntityFramework.Repositories
 {
-    public abstract class SuperPowersRepositoryBase<TEntity, TPrimaryKey> : EfRepositoryBase<AngularCRUDDbContext, TEntity, TPrimaryKey>
+    using Abp.Domain.Entities;
+    using Abp.EntityFramework;
+    using Abp.EntityFramework.Repositories;
+
+    using AngularCRUD.EntityFramework;
+
+    public abstract class AngularCRUDRepositoryBase<TEntity, TPrimaryKey> : EfRepositoryBase<AngularCRUDDbContext, TEntity, TPrimaryKey>
         where TEntity : class, IEntity<TPrimaryKey>
     {
-        protected SuperPowersRepositoryBase(IDbContextProvider<AngularCRUDDbContext> dbContextProvider)
+        protected AngularCRUDRepositoryBase(IDbContextProvider<AngularCRUDDbContext> dbContextProvider)
             : base(dbContextProvider)
         {
 
@@ -16,10 +18,10 @@ namespace SuperPowers.EntityFramework.Repositories
         //add common methods for all repositories
     }
 
-    public abstract class SuperPowersRepositoryBase<TEntity> : SuperPowersRepositoryBase<TEntity, int>
+    public abstract class AngularCRUDRepositoryBase<TEntity> : AngularCRUDRepositoryBase<TEntity, int>
         where TEntity : class, IEntity<int>
     {
-        protected SuperPowersRepositoryBase(IDbContextProvider<AngularCRUDDbContext> dbContextProvider)
+        protected AngularCRUDRepositoryBase(IDbContextProvider<AngularCRUDDbContext> dbContextProvider)
             : base(dbContextProvider)
         {
 

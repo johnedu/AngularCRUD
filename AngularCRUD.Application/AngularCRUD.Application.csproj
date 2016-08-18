@@ -85,13 +85,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classify\AutoMapperClassifyProfile.cs" />
-    <Compile Include="Classify\DTOs\InputModels\GetClassifyHeroesAndVillainsInput.cs" />
-    <Compile Include="Classify\DTOs\OutputModels\SuperHeroOutput.cs" />
-    <Compile Include="Classify\DTOs\OutputModels\GetAllSuperHeroesOutput.cs" />
-    <Compile Include="Classify\DTOs\OutputModels\GetClassifyHeroesAndVillainsOutput.cs" />
-    <Compile Include="Classify\IClassifyService.cs" />
-    <Compile Include="Classify\ClassifyService.cs" />
+    <Compile Include="Admin\AdminService.cs" />
+    <Compile Include="Admin\AutoMapperAdminProfile.cs" />
+    <Compile Include="Admin\DTOs\InputModels\DeletePersonInput.cs" />
+    <Compile Include="Admin\DTOs\InputModels\GetPersonInput.cs" />
+    <Compile Include="Admin\DTOs\InputModels\SavePersonInput.cs" />
+    <Compile Include="Admin\DTOs\InputModels\UpdatePersonInput.cs" />
+    <Compile Include="Admin\DTOs\OutputModels\GetAllPersonsOutput.cs" />
+    <Compile Include="Admin\DTOs\OutputModels\PersonOutput.cs" />
+    <Compile Include="Admin\DTOs\OutputModels\GetPersonOutput.cs" />
+    <Compile Include="Admin\IAdminService.cs" />
     <Compile Include="AngularCRUDApplicationModule.cs" />
     <Compile Include="AngularCRUDAppServiceBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -20,3 +20,4 @@ Doc/*
 *.GhostDoc.xml
 *UpgradeLog*.htm
 *.DotSettings
+AngularCRUD.Web/Logs/Logs.txt

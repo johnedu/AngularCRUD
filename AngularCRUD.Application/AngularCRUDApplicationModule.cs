@@ -10,8 +10,6 @@
 
     using AutoMapper;
 
-    using SuperPowers;
-
     [DependsOn(typeof(AngularCRUDCoreModule))]
     public class AngularCRUDApplicationModule : AbpModule
     {

@@ -2,6 +2,7 @@
 <localizationDictionary culture="en">
   <texts>
     <text name="HomePage" value="Home page" />
+    <text name="PersonsPage" value="CRUD Personas" />
     <text name="About" value="About" />
     <text name="WellcomeMessage" value="Welcome to Angular CRUD!" />
     <text name="Home_ThisIsATemplate" value="This project template is a starting point to develop web applicatins using..." />

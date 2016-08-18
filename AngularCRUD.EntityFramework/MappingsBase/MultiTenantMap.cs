@@ -1,13 +1,9 @@
-﻿using SuperPowers.BaseEntity;
-using System;
-using System.Collections.Generic;
-using System.Data.Entity.ModelConfiguration;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace SuperPowers.MappingsBase
+﻿namespace AngularCRUD.MappingsBase
 {
+    using System.Data.Entity.ModelConfiguration;
+
+    using AngularCRUD.BaseEntity;
+
     public class MultiTenantMap<TMultiTenantEntidad> : EntityTypeConfiguration<TMultiTenantEntidad>
         where TMultiTenantEntidad : class, IMultiTenant
     {
@@ -15,10 +11,10 @@ namespace SuperPowers.MappingsBase
             : base()
         {
             //Llave Primaria
-            HasKey(mt => mt.Id);
+            this.HasKey(mt => mt.Id);
 
             //Propiedad de TenantId
-            Property(mt => mt.TenantId).IsRequired();
+            this.Property(mt => mt.TenantId).IsRequired();
         }
 
     }

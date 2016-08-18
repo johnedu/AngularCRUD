@@ -90,14 +90,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classify\Mappings\SuperPowersPersonMap.cs" />
-    <Compile Include="Classify\Repositories\SuperPowersPersonRepository.cs" />
+    <Compile Include="Admin\Mappings\PersonMap.cs" />
+    <Compile Include="Admin\Repositories\PersonRepository.cs" />
     <Compile Include="EntityFramework\AngularCRUDDbContext.cs" />
     <Compile Include="EntityFramework\Repositories\AngularCRUDRepositoryBase.cs" />
     <Compile Include="MappingsBase\MultiTenantMap.cs" />
-    <Compile Include="Migrations\201506020848117_Initial_database.cs" />
-    <Compile Include="Migrations\201506020848117_Initial_database.Designer.cs">
-      <DependentUpon>201506020848117_Initial_database.cs</DependentUpon>
+    <Compile Include="Migrations\201608180436366_Initial.cs" />
+    <Compile Include="Migrations\201608180436366_Initial.Designer.cs">
+      <DependentUpon>201608180436366_Initial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="AngularCRUDDataModule.cs" />
@@ -114,8 +114,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201506020848117_Initial_database.resx">
-      <DependentUpon>201506020848117_Initial_database.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201608180436366_Initial.resx">
+      <DependentUpon>201608180436366_Initial.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

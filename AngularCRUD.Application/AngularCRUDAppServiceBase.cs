@@ -2,8 +2,6 @@
 {
     using Abp.Application.Services;
 
-    using SuperPowers;
-
     /// <summary>
     /// Derive your application services from this class.
     /// </summary>

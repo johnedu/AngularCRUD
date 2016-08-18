@@ -1,12 +1,12 @@
-﻿using System.Web.Mvc;
-
-namespace SuperPowers.Web.Controllers
+﻿namespace AngularCRUD.Web.Controllers
 {
+    using System.Web.Mvc;
+
     public class HomeController : AngularCRUDControllerBase
     {
         public ActionResult Index()
         { 
-            return View("~/App/Main/views/layout/layout.cshtml"); //Layout of the angular application.
+            return this.View("~/App/Main/views/layout/layout.cshtml"); //Layout of the angular application.
         }
 	}
 }

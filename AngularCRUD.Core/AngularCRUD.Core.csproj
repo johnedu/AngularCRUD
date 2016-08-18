@@ -77,8 +77,8 @@
   <ItemGroup>
     <Compile Include="BaseEntity\EntityMultiTenant.cs" />
     <Compile Include="BaseEntity\IMultiTenant.cs" />
-    <Compile Include="Classify\Entities\SuperPowersPerson.cs" />
-    <Compile Include="Classify\Repositories\ISuperPowersPersonRepository.cs" />
+    <Compile Include="Admin\Entities\Person.cs" />
+    <Compile Include="Admin\Repositories\IPersonRepository.cs" />
     <Compile Include="AngularCRUDConsts.cs" />
     <Compile Include="AngularCRUDCoreModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
